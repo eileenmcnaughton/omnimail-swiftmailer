@@ -1,0 +1,34 @@
+{
+  "name" : "civicrm/omnimail-swiftmailer",
+  "type" : "library",
+  "description" : "Swiftmailer plugin for Omnimail",
+  "keywords" : [
+    "email",
+    "mail",
+    "delivery",
+    "omnimail",
+    "swiftmailer"
+  ],
+  "license" : "MIT",
+  "authors" : [{
+    "name" : "Eileen McNaughton",
+    "email" : "emcnaughton@wikimedia.org"
+  }
+  ],
+  "require": {
+    "swiftmailer/swiftmailer": "@stable"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Omnimail\\Swiftmailer\\" : "src"
+    }
+  },
+  "autoload-dev" : {
+    "psr-4" : {
+      "Omnimail\\Tests\\" : "test/tests"
+    }
+  },
+  "minimum-stability" : "dev",
+  "prefer-stable" : true
+}
+
